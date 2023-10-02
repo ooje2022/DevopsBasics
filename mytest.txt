@@ -1,1 +1,2 @@
 Another attempt at understanding git pull, branch and merge
+The current class isthought by Rahul Shetty - ooje01
