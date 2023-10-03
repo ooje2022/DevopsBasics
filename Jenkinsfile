@@ -1,6 +1,8 @@
 node{
   stage('SCM Checkout'){
-    git 'https://github.com/ooje2022/DevopsBasics'
+    def gitHome = tool name: 'git', type: 'git'
+    
+    "/usr/bin/${gitHome} https://github.com/ooje2022/DevopsBasics"
   }
   stage('Compile-Package'){
     sh 'mnv package'
